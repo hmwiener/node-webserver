@@ -49,7 +49,7 @@ app.get('/', (req, res) => {
     // });
     res.render('home.hbs', {
       pageHeaderName: 'Home page',
-      welcomeMsg: 'Hi and welcome to my fucking web page!',
+      welcomeMsg: 'Hi and welcome to my web page!',
       pageTitle: 'My Home Page'
     })
 });
@@ -58,6 +58,14 @@ app.get('/about', (req, res) => {
   res.render('about.hbs', {
     pageHeaderName: 'Aboot page',
     pageTitle: 'About Page Injected'
+  });
+});
+
+app.get('/github', (req, res) => {
+  res.render('github.hbs', {
+    pageHeaderName: 'Navigate to my Github page',
+    welcomeMsg: 'Hi and welcome to my Github link page!',
+    pageTitle: 'Github Link'
   });
 });
 
