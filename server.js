@@ -49,7 +49,7 @@ app.get('/', (req, res) => {
     // });
     res.render('home.hbs', {
       pageHeaderName: 'Home page',
-      welcomeMsg: 'Hello.  Welcome to my new and improved web page!',
+      welcomeMsg: 'Hello.  Even more changes to my new and improved web page!',
       pageTitle: 'My Home Page'
     })
 });
@@ -57,14 +57,14 @@ app.get('/', (req, res) => {
 app.get('/about', (req, res) => {
   res.render('about.hbs', {
     pageHeaderName: 'Aboot page',
-    pageTitle: 'About Page Injected'
+    pageTitle: 'Now with AWS CodePipeline!'
   });
 });
 
 app.get('/github', (req, res) => {
   res.render('github.hbs', {
     pageHeaderName: 'Navigate to my Github page',
-    welcomeMsg: 'This is the updated link to my Github link page!',
+    welcomeMsg: 'CodePipeline has updated this page to link to my Github link page!',
     pageTitle: 'Github Link, Now with CI/CD!'
   });
 });
