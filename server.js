@@ -49,7 +49,7 @@ app.get('/', (req, res) => {
     // });
     res.render('home.hbs', {
       pageHeaderName: 'Home page',
-      welcomeMsg: 'Hi and welcome to my web page!',
+      welcomeMsg: 'Hello.  Welcome to my new and improved web page!',
       pageTitle: 'My Home Page'
     })
 });
@@ -64,8 +64,8 @@ app.get('/about', (req, res) => {
 app.get('/github', (req, res) => {
   res.render('github.hbs', {
     pageHeaderName: 'Navigate to my Github page',
-    welcomeMsg: 'Hi and welcome to my Github link page!',
-    pageTitle: 'Github Link'
+    welcomeMsg: 'This is the updated link to my Github link page!',
+    pageTitle: 'Github Link, Now with CI/CD!'
   });
 });
 
